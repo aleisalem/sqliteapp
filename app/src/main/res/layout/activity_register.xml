@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tum.sqliteapp.RegisterActivity">
+
+    <TextView
+        android:id="@+id/TextView_register_title"
+        android:layout_width="120pt"
+        android:layout_height="20pt"
+        android:layout_centerHorizontal="true"
+        android:textSize="12pt"
+        android:text="Join our community"/>
+
+    <TextView
+        android:id="@+id/TextView_register_firstname"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_below="@id/TextView_register_title"
+        android:layout_marginTop="50pt"
+        android:textSize="8pt"
+        android:text="First name:"/>
+
+    <EditText
+        android:id="@+id/EditText_register_firstname"
+        android:layout_width="80pt"
+        android:layout_height="20pt"
+        android:layout_toRightOf="@id/TextView_register_firstname"
+        android:layout_below="@id/TextView_register_title"
+        android:layout_marginTop="45pt"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Your first name... "/>
+
+    <TextView
+        android:id="@+id/TextView_register_lastname"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_below="@id/TextView_register_firstname"
+        android:layout_marginTop="5pt"
+        android:textSize="8pt"
+        android:text="Last name:"/>
+
+    <EditText
+        android:id="@+id/EditText_register_lastname"
+        android:layout_width="80pt"
+        android:layout_height="20pt"
+        android:layout_toRightOf="@id/TextView_register_lastname"
+        android:layout_below="@id/TextView_register_firstname"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Your last name... "/>
+
+    <TextView
+        android:id="@+id/TextView_register_email"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_below="@id/TextView_register_lastname"
+        android:layout_marginTop="5pt"
+        android:textSize="8pt"
+        android:text="Email:"/>
+
+    <EditText
+        android:id="@+id/EditText_register_email"
+        android:inputType="textEmailAddress"
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:layout_toRightOf="@id/TextView_register_email"
+        android:layout_below="@id/TextView_register_lastname"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Your email address... "/>
+
+    <TextView
+        android:id="@+id/TextView_register_phone"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_below="@id/TextView_register_email"
+        android:layout_marginTop="5pt"
+        android:textSize="8pt"
+        android:text="Phone:"/>
+
+    <EditText
+        android:id="@+id/EditText_register_phone"
+        android:inputType="number"
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:layout_toRightOf="@id/TextView_register_phone"
+        android:layout_below="@id/TextView_register_email"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Your phone number... "/>
+
+    <TextView
+        android:id="@+id/TextView_register_username"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_below="@id/TextView_register_phone"
+        android:layout_marginTop="5pt"
+        android:textSize="8pt"
+        android:text="Username:"/>
+
+    <EditText
+        android:id="@+id/EditText_register_username"
+        android:layout_width="80pt"
+        android:layout_height="20pt"
+        android:layout_toRightOf="@id/TextView_register_username"
+        android:layout_below="@id/TextView_register_phone"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Your username... "/>
+
+    <TextView
+        android:id="@+id/TextView_register_password"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_below="@id/TextView_register_username"
+        android:layout_marginTop="5pt"
+        android:textSize="8pt"
+        android:text="Password:"/>
+
+    <EditText
+        android:id="@+id/EditText_register_password"
+        android:inputType="textPassword"
+        android:layout_width="80pt"
+        android:layout_height="20pt"
+        android:layout_toRightOf="@id/TextView_register_password"
+        android:layout_below="@id/TextView_register_username"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Your password... "/>
+
+    <Button android:id="@+id/Button_register_register"
+        android:layout_width="50pt"
+        android:layout_height="20pt"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/EditText_register_password"
+        android:text="Submit"
+        android:onClick="addUser"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tum.sqliteapp.MainActivity">
+
+    <TextView
+        android:id="@+id/TextView_main_title"
+        android:layout_width="120pt"
+        android:layout_height="20pt"
+        android:layout_centerHorizontal="true"
+        android:textSize="12pt"
+        android:text="Welcome to the social"/>
+
+    <TextView
+        android:id="@+id/TextView_main_username"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_below="@id/TextView_main_title"
+        android:layout_marginTop="50pt"
+        android:textSize="8pt"
+        android:text="Username:"/>
+
+    <EditText
+        android:id="@+id/EditText_main_username"
+        android:layout_width="80pt"
+        android:layout_height="20pt"
+        android:layout_toRightOf="@id/TextView_main_username"
+        android:layout_below="@id/TextView_main_title"
+        android:layout_marginTop="45pt"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Your username... "/>
+
+    <TextView
+        android:id="@+id/TextView_main_password"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_below="@id/TextView_main_username"
+        android:layout_marginTop="5pt"
+        android:textSize="8pt"
+        android:text="Password:"/>
+
+    <EditText
+        android:id="@+id/EditText_main_password"
+        android:inputType="textPassword"
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:layout_toRightOf="@id/TextView_main_username"
+        android:layout_below="@id/TextView_main_title"
+        android:layout_marginTop="65pt"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="...and password, please. "/>
+
+    <Button
+        android:id="@+id/Button_main_login"
+        android:layout_width="60pt"
+        android:layout_height="20pt"
+        android:layout_below="@id/EditText_main_password"
+        android:layout_marginTop="30pt"
+        android:layout_alignLeft="@id/EditText_main_password"
+        android:text="Login"
+        android:onClick="loginUser"/>
+
+    <Button
+        android:id="@+id/Button_main_register"
+        android:layout_width="60pt"
+        android:layout_height="20pt"
+        android:layout_below="@id/Button_main_login"
+        android:layout_marginTop="2pt"
+        android:layout_alignLeft="@id/Button_main_login"
+        android:text="Register"
+        android:onClick="toRegisterScreen"/>
+
+</RelativeLayout>
